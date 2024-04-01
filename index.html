@@ -9,38 +9,56 @@
                 background-color: white;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 margin-bottom: 25px;
+                display: inline-block;
+                margin-right: 20px;
+                position: relative;
+                transition: transform 0.2s;
+
+            }
+
+            div.polaroid img {
+                width: 96%;
+                height: 200px;
+                display: block;
+                border: 5px solid #fff;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                
+
             }
 
             div.container {
                 text-align: center;
-                padding: 10px 20px;
+                padding: 10px 30px;
+                box-sizing: border-box;
             }
+
+
         </style>
     </head>
     <body style="background-color: lightblue;font-family: Arial; color: #333;">
         <h1><center>Odin Recipes</center></h1>
         <ul>
-        <center>
+        
         <div class="polaroid">
-            <img src="recipes/cheese.jpg" alt="Cheese Lasagna" style="width:100%">
+            <img src="recipes/cheese.jpg" alt="Cheese Lasagna">
             <div class="container">
                 <li><a href="recipes/lasagna.html">Cheese Lasagna</a></li>
             </div>
           </div>
           
           <div class="polaroid">
-            <img src="recipes/Lemon-Glazed Carrots.jpg" alt="Lemon-Glazed Carrots" style="width:100%">
+            <img src="recipes/Lemon-Glazed Carrots.jpg" alt="Lemon-Glazed Carrots">
             <div class="container">
             <li><a href="recipes/carrots.html">Lemon-Glazed Carrots</a></li>
             </div>
           </div>
           <div class="polaroid">
-            <img src="recipes/bananapudding.jpg" alt="Banana Pudding" style="width:100%">
+            <img src="recipes/bananapudding.jpg" alt="Banana Pudding">
             <div class="container">
                 <li><a href="recipes/bananapudding.html">Banana Pudding</a></li>
             </div>
           </div>
-        </center>
+        
         </ul>
         
     </body>

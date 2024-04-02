@@ -12,11 +12,10 @@ body {
   
   .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #1F2937;
   }
   
   .topnav a {
-    float: right;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -30,30 +29,88 @@ body {
   }
   
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: hsl(271, 95%, 34%);
     color: white;
   }
 
 .header {
   padding: 60px;
   text-align: center;
-  background: #1abc9c;
+  background: #1F2937;
   color: white;
   font-size: 30px;
+  height: 50%;
 }
 
+.container {
+  display : flex
+}
 
-.content {padding:20px;}
+.container .left {
+  flex: 1;
+  text-align: left;
+}
+
+.container .right {
+  flex: 1;
+  text-align: right;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container .left {
+  flex: 1;
+  text-align: left;
+}
+
+.flex-container .left p {
+  font-size: 15px;
+}
+
+.flex-container .right {
+
+  flex: 1;
+  background-color: grey;
+
+
+}
+
+.flex-container .right p {
+  text-align: center;
+}
+
 </style>
 </head>
 <body>
 
 <div class="header">
-    <div class="topnav">
+  <div class="container">
+      <div class="left">
+        <div class="Logo">
+          <h3>Header Logo</h3>
+        </div>
+      </div>
+      <div class="right">
+        <div class="topnav">
         <a class="active" href="#headerlinkone">header link one</a>
         <a href="#headerlinktwo">header link two</a>
         <a href="headerlinkthree">header link three</a>
+      </div>
+    </div>
+  </div>
+    <div class="flex-container">
+    <div class="left">
+      <h5>This website is<br>awesome</h5>
+      <p>This website has some subtext that goes here under the<br> main title. It's a smaller font and the color is lower<br> contrast.</p>
+      <button>Sign up</button>
     </div> 
+    <div class="right">
+        <p>This is a placeholder for an image</p>
+
+    </div>
+  </div>
 </div>
 
 
